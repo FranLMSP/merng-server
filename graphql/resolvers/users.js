@@ -70,7 +70,7 @@ module.exports = {
 
       const newUser = new User({
         email,
-        username,
+        username: username.trim(),
         password: hashedPassword,
         createdAt: new Date().toISOString()
       })
