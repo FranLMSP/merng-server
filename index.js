@@ -21,3 +21,6 @@ mongoose.connect(MONGODB, { useUnifiedTopology: true, useNewUrlParser: true})
   .then(res => {
     console.log(`Apollo server running at ${res.url}`)
   })
+  .catch(err => {
+    console.error(err)
+  })
